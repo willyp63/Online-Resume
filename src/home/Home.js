@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div
-      className="relative flex items-center px-32"
+      id="home"
+      className="relative flex items-center outer-grid"
       style={{ height: "100vh" }}
     >
       <img
@@ -13,7 +14,7 @@ const Home = () => {
         alt="person coding"
       ></img>
       <div className="relative">
-        <h1 className="font-serif text-white text-8xl leading-none mb-24">
+        <h1 className="font-serif text-white leading-none mb-16 md:mb-24 text-6xl md:text-7xl lg:text-8xl">
           <span className="text-orange-400 mr-2">A</span>lways
           <br />
           <span className="text-orange-400 mr-2">B</span>e
@@ -22,7 +23,7 @@ const Home = () => {
         </h1>
         <Link
           to="/"
-          className="transition-all duration-200 border-2 border-orange-500 hover:bg-orange-500 px-8 py-4 text-md text-white hover:text-black"
+          className="transition-colors duration-200 border-2 border-orange-500 hover:bg-orange-500 text-white hover:text-black text-sm px-6 py-4 md:px-8 md:text-base"
         >
           HIRE ME TODAY
         </Link>

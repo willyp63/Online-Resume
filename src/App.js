@@ -1,7 +1,8 @@
 import React from "react";
 
-import { NavBar } from "./shared";
-import Home from "./home/Home";
+import { NavBar, Footer } from "./shared";
+import Projects from "./projects/Projects";
+import Contact from "./contact/Contact";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -10,10 +11,14 @@ const App = () => {
     <Router>
       <NavBar />
       <Switch>
+        <Route path="/contact">
+          <Contact />
+        </Route>
         <Route path="/">
-          <Home />
+          <Projects />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 };

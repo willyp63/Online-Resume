@@ -1,23 +1,51 @@
-import React from "react";
-import { FiMail } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import React, { useEffect, useRef } from "react";
+import { FaEnvelope, FaBars } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const NavBar = () => {
+  const bgEl = useRef(null);
+
+  useEffect(() => {
+    const navBarHeight = bgEl.current.clientHeight;
+
+    const onScroll = () => {
+      const scrollOffset = Math.max(window.innerHeight - window.scrollY, 0);
+      if (scrollOffset < navBarHeight) {
+        bgEl.current.classList.remove("hidden");
+        bgEl.current.style.top = `${scrollOffset}px`;
+      } else {
+        bgEl.current.classList.add("hidden");
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <nav className="fixed z-50 top-0 left-0 px-32 pt-2 w-full flex justify-between items-center">
-      <div className="flex items-center relative">
-        <Link to="/">
+    <nav className="fixed z-50 top-0 left-0 py-2 w-full flex justify-between items-center outer-grid">
+      <div
+        ref={bgEl}
+        className="absolute left-0 w-full bg-contain h-full opacity-75 bg-white"
+        style={{ top: "100vh" }}
+      ></div>
+      <div
+        className="flex items-center relative"
+        style={{ mixBlendMode: "difference" }}
+      >
+        <HashLink smooth to="/#home" className="nav-bar-logo-link">
           <svg
             className="absolute top-0 left-0"
             version="1.1"
             baseProfile="full"
             width="100"
             height="100"
-            stroke="#fff"
-            fill="#fff"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <line x1="40" y1="60" x2="60" y2="40" style={{ strokeWidth: 2 }} />
+            <line x1="42" y1="58" x2="58" y2="42" style={{ strokeWidth: 2 }} />
             <text
               x="43"
               y="47"
@@ -42,13 +70,10 @@ const NavBar = () => {
             </text>
           </svg>
           <svg
-            className="transform transition-transform duration-200 hover:rotate-45"
             version="1.1"
             baseProfile="full"
             width="100"
             height="100"
-            stroke="#fff"
-            fill="#fff"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect
@@ -60,46 +85,37 @@ const NavBar = () => {
               style={{ strokeWidth: 2, fillOpacity: 0 }}
             />
           </svg>
-        </Link>
-        <Link
-          to="/"
-          className="text-white hover:text-yellow-600 text-md p-2 mx-4"
-        >
-          PROJECTS
-        </Link>
-        <Link
-          to="/"
-          className="text-white hover:text-yellow-600 text-md p-2 mx-4"
-        >
-          ABOUT
-        </Link>
-        <Link
-          to="/"
-          className="text-white hover:text-yellow-600 text-md p-2 mx-4"
-        >
-          SKILLS
-        </Link>
-        <Link
-          to="/"
-          className="text-white hover:text-yellow-600 text-md p-2 mx-4"
-        >
-          RESUME
-        </Link>
-        <Link
-          to="/"
-          className="text-white hover:text-yellow-600 text-md p-2 mx-4"
-        >
-          BLOG
-        </Link>
+        </HashLink>
+        <div className="hidden lg:block">
+          <NavLink to="/" activeClassName="nav-bar-link--active" className="nav-bar-link">
+            PROJECTS
+          </NavLink>
+          <NavLink to="/about" activeClassName="nav-bar-link--active" className="nav-bar-link">
+            ABOUT
+          </NavLink>
+          <NavLink to="/skills" activeClassName="nav-bar-link--active" className="nav-bar-link">
+            SKILLS
+          </NavLink>
+          <NavLink to="/resume" activeClassName="nav-bar-link--active" className="nav-bar-link">
+            RESUME
+          </NavLink>
+          <NavLink to="/blog" activeClassName="nav-bar-link--active" className="nav-bar-link">
+            BLOG
+          </NavLink>
+        </div>
       </div>
-      <div>
-        <Link
-          to="/"
-          className="text-white flex items-center hover:text-yellow-600 text-md p-2"
-        >
-          <FiMail className="w-4 h-4 mr-2" />
-          CONTACT
-        </Link>
+      <div style={{ mixBlendMode: "difference" }}>
+        <div className="hidden lg:block">
+          <NavLink to="/contact" activeClassName="nav-bar-link--active" className="nav-bar-link">
+            <FaEnvelope className="w-4 h-4 mr-2" />
+            CONTACT
+          </NavLink>
+        </div>
+        <div className="lg:hidden">
+          <button className="nav-bar-link">
+            <FaBars className="w-8 h-8" />
+          </button>
+        </div>
       </div>
     </nav>
   );

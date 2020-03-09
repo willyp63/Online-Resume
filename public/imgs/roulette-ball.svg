@@ -1,0 +1,17 @@
+<svg
+  version="1.1"
+  class="ball"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewBox="0 0 511.984 511.984"
+  style="enable-background:new 0 0 511.984 511.984;"
+  xml:space="preserve"
+>
+  <path
+    style="fill:#E6E9ED;"
+    d="M348.863,135.543c-4.156,4.171-10.92,4.171-15.092,0c-4.156-4.156-4.156-10.922,0-15.078
+    c4.172-4.172,10.936-4.172,15.092,0C353.019,124.621,353.019,131.387,348.863,135.543z"
+  />
+</svg>
