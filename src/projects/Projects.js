@@ -1,13 +1,16 @@
 import React from "react";
 
 import Project from "./Project";
-import Splash from "../shared/Splash";
+import { Splash } from "../shared";
 
 const Projects = () => {
   return (
     <React.Fragment>
-      <div id="home"></div>
-      <Splash />
+      <Splash
+        titleLines={["Recent", "Projects"]}
+        imgUrl="/imgs/projects-bg.jpg"
+        imgAlt="person coding"
+      />
       <div>
         <Project
           name="Fat Bat"

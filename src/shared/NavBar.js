@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { FaEnvelope, FaBars } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 
 const NavBar = () => {
   const bgEl = useRef(null);
@@ -36,7 +35,7 @@ const NavBar = () => {
         className="flex items-center relative"
         style={{ mixBlendMode: "difference" }}
       >
-        <HashLink smooth to="/#home" className="nav-bar-logo-link">
+        <HashLink smooth to="/projects#splash" className="nav-bar-logo-link">
           <svg
             className="absolute top-0 left-0"
             version="1.1"
@@ -87,29 +86,29 @@ const NavBar = () => {
           </svg>
         </HashLink>
         <div className="hidden lg:block">
-          <NavLink to="/" activeClassName="nav-bar-link--active" className="nav-bar-link">
+          <NavHashLink smooth to="/projects#splash" activeClassName="nav-bar-link--active" className="nav-bar-link">
             PROJECTS
-          </NavLink>
-          <NavLink to="/about" activeClassName="nav-bar-link--active" className="nav-bar-link">
+          </NavHashLink>
+          <NavHashLink smooth to="/about#splash" activeClassName="nav-bar-link--active" className="nav-bar-link">
             ABOUT
-          </NavLink>
-          <NavLink to="/skills" activeClassName="nav-bar-link--active" className="nav-bar-link">
+          </NavHashLink>
+          <NavHashLink smooth to="/skills#splash" activeClassName="nav-bar-link--active" className="nav-bar-link">
             SKILLS
-          </NavLink>
-          <NavLink to="/resume" activeClassName="nav-bar-link--active" className="nav-bar-link">
+          </NavHashLink>
+          <NavHashLink smooth to="/resume#splash" activeClassName="nav-bar-link--active" className="nav-bar-link">
             RESUME
-          </NavLink>
-          <NavLink to="/blog" activeClassName="nav-bar-link--active" className="nav-bar-link">
+          </NavHashLink>
+          <NavHashLink smooth to="/blog#splash" activeClassName="nav-bar-link--active" className="nav-bar-link">
             BLOG
-          </NavLink>
+          </NavHashLink>
         </div>
       </div>
       <div style={{ mixBlendMode: "difference" }}>
         <div className="hidden lg:block">
-          <NavLink to="/contact" activeClassName="nav-bar-link--active" className="nav-bar-link">
+          <NavHashLink smooth to="/contact#splash" activeClassName="nav-bar-link--active" className="nav-bar-link">
             <FaEnvelope className="w-4 h-4 mr-2" />
             CONTACT
-          </NavLink>
+          </NavHashLink>
         </div>
         <div className="lg:hidden">
           <button className="nav-bar-link">
