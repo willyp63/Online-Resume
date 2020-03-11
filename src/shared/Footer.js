@@ -48,26 +48,9 @@ const Footer = () => {
           }
           onMouseEnter={() => setHoverItem("linkedin")}
         >
-          <a href="https://github.com/willyp63">
+          <a href="https://www.linkedin.com/in/wilpirino/">
             <div className="flex justify-center items-center rounded-full bg-white w-10 h-10 mx-2">
               <FaLinkedinIn className="w-6 h-6" />
-            </div>
-          </a>
-        </li>
-        <li
-          className={
-            "transform transition-transform duration-200" +
-            (hoverItem
-              ? hoverItem === "youtube"
-                ? " scale-110"
-                : " scale-90"
-              : "")
-          }
-          onMouseEnter={() => setHoverItem("youtube")}
-        >
-          <a href="https://github.com/willyp63">
-            <div className="flex justify-center items-center rounded-full bg-white w-10 h-10 mx-2">
-              <FaYoutube className="w-6 h-6" />
             </div>
           </a>
         </li>
@@ -82,7 +65,7 @@ const Footer = () => {
           }
           onMouseEnter={() => setHoverItem("instagram")}
         >
-          <a href="https://github.com/willyp63">
+          <a href="https://www.instagram.com/mr_kitty_and_oni/">
             <div className="flex justify-center items-center rounded-full bg-white w-10 h-10 mx-2">
               <FaInstagram className="w-6 h-6" />
             </div>
@@ -99,7 +82,7 @@ const Footer = () => {
           }
           onMouseEnter={() => setHoverItem("email")}
         >
-          <a href="https://github.com/willyp63">
+          <a href="mailto:wpirino1@gmail.com">
             <div className="flex justify-center items-center rounded-full bg-white w-10 h-10 mx-2">
               <FaEnvelope className="w-6 h-6" />
             </div>

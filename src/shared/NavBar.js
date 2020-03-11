@@ -45,7 +45,7 @@ const NavBar = ({ isDark = false }) => {
         className="flex items-center relative"
         style={{ mixBlendMode: "difference" }}
       >
-        <HashLink smooth to="/projects#splash" className="nav-bar-logo-link">
+        <HashLink to="/projects#splash" className="nav-bar-logo-link">
           <svg
             className="absolute top-0 left-0"
             version="1.1"
@@ -97,7 +97,6 @@ const NavBar = ({ isDark = false }) => {
         </HashLink>
         <div className="hidden lg:block">
           <NavHashLink
-            smooth
             to="/projects#splash"
             activeClassName="nav-bar-link--active"
             className="nav-bar-link"
@@ -105,7 +104,6 @@ const NavBar = ({ isDark = false }) => {
             PROJECTS
           </NavHashLink>
           <NavHashLink
-            smooth
             to="/about#splash"
             activeClassName="nav-bar-link--active"
             className="nav-bar-link"
@@ -113,7 +111,6 @@ const NavBar = ({ isDark = false }) => {
             ABOUT
           </NavHashLink>
           <NavHashLink
-            smooth
             to="/resume#splash"
             activeClassName="nav-bar-link--active"
             className="nav-bar-link"
@@ -125,7 +122,6 @@ const NavBar = ({ isDark = false }) => {
       <div style={{ mixBlendMode: "difference" }}>
         <div className="hidden lg:block">
           <NavHashLink
-            smooth
             to="/contact#splash"
             activeClassName="nav-bar-link--active"
             className="nav-bar-link"

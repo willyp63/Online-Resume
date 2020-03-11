@@ -17,9 +17,6 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Redirect to="/projects" />
-        </Route>
         <Route path="/projects">
           <Projects />
         </Route>
@@ -31,6 +28,9 @@ const App = () => {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/">
+          <Redirect to="/projects" />
         </Route>
       </Switch>
       <Footer />

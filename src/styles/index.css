@@ -1,12 +1,28 @@
 @tailwind base;
 @tailwind utilities;
 
+html, body {
+  scroll-padding: 116px;
+}
+
 .outer-grid {
   @apply px-8;
 }
 
+.text-input {
+  @apply border-2 border-black py-2 px-3 text-xl w-full;
+}
+
+.text-input.error {
+  @apply border-red-500;
+}
+
+.input-label {
+  @apply block text-lg mb-1;
+}
+
 .btn {
-  @apply px-4 py-2 rounded-md bg-yellow-700 transition-colors duration-200 text-white flex items-center;
+  @apply px-8 py-3 bg-yellow-700 transition-colors duration-200 text-white flex items-center;
 }
 
 .btn:hover {
@@ -20,7 +36,7 @@
   }
 
   .btn {
-    @apply px-8 py-3 text-lg;
+    @apply px-12 py-4 text-lg;
   }
 }
 

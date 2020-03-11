@@ -25,7 +25,7 @@ const Resume = () => {
     <React.Fragment>
       <NavBar isDark />
       <Splash
-        titleLines={["My", "Resume"]}
+        titleLines={["My History", "& Credentials"]}
         imgUrl="/imgs/resume-bg.jpg"
         imgAlt="person coding"
       >
