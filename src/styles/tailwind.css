@@ -13808,8 +13808,40 @@ video {
           transition-duration: 1000ms;
 }
 
-html, body {
-  scroll-padding: 116px;
+body {
+  scroll-padding-top: 116px;
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  height: 100%;
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.mobile-nav, .nav, #content {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.mobile-nav-active .nav, .mobile-nav-active #content {
+  -webkit-transform: translate(-250px, 0);
+          transform: translate(-250px, 0);
+}
+
+.mobile-nav {
+  width: 250px;
+  -webkit-transform: translate(250px, 0);
+          transform: translate(250px, 0);
+}
+
+.mobile-nav-active .mobile-nav {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .outer-grid {
@@ -13901,14 +13933,15 @@ html, body {
   padding-bottom: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  font-size: 1.125rem;
 }
 
 .nav-bar-link:hover {
-  color: #d69e2e;
+  color: #ecc94b;
 }
 
 .nav-bar-link--active {
-  color: #b7791f;
+  color: #d69e2e;
 }
 
 .nav-bar-logo-link {
@@ -13929,7 +13962,7 @@ html, body {
 }
 
 .nav-bar-logo-link:hover > svg {
-  color: #d69e2e;
+  color: #ecc94b;
   fill: currentColor;
   stroke: currentColor;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 
-import { NavBar, Footer } from "./shared";
 import Projects from "./projects/Projects";
 import About from "./about/About";
 import Resume from "./resume/Resume";
@@ -33,7 +32,6 @@ const App = () => {
           <Redirect to="/projects" />
         </Route>
       </Switch>
-      <Footer />
     </Router>
   );
 };
