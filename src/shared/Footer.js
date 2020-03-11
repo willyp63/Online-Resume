@@ -11,8 +11,8 @@ const Footer = () => {
   const [hoverItem, setHoverItem] = useState(null);
 
   return (
-    <div className="flex flex-col items-center bg-gray-900 py-32 px-32">
-      <h2 className="font-serif text-5xl text-white text-center">
+    <div className="flex flex-col items-center bg-gray-900 py-32 outer-grid text-center">
+      <h2 className="font-serif text-5xl text-white">
         Let me build the software you need.
       </h2>
       <p className="text-white opacity-25 mt-8">

@@ -29,6 +29,8 @@ const Project = ({
               {githubLink ? (
                 <a
                   href={githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="transition-text duration-200 hover:text-blue-500"
                 >
                   <FaGithubSquare className="w-8 h-8" />
@@ -37,6 +39,8 @@ const Project = ({
               {link ? (
                 <a
                   href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="ml-4 transition-text duration-200 hover:text-blue-500"
                 >
                   <FaLink className="w-8 h-8" />

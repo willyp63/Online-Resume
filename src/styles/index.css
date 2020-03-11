@@ -5,10 +5,22 @@
   @apply px-8;
 }
 
+.btn {
+  @apply px-4 py-2 rounded-md bg-yellow-700 transition-colors duration-200 text-white flex items-center;
+}
+
+.btn:hover {
+  @apply bg-yellow-600;
+}
+
 /** md: */
 @media (min-width: 768px) {
   .outer-grid {
     @apply px-16;
+  }
+
+  .btn {
+    @apply px-8 py-3 text-lg;
   }
 }
 
@@ -24,11 +36,11 @@
 }
 
 .nav-bar-link:hover {
-  @apply text-yellow-500;
+  @apply text-yellow-600;
 }
 
 .nav-bar-link--active {
-  @apply text-yellow-600;
+  @apply text-yellow-700;
 }
 
 .nav-bar-logo-link {
@@ -42,7 +54,7 @@
 }
 
 .nav-bar-logo-link:hover > svg {
-  @apply text-yellow-500 fill-current stroke-current;
+  @apply text-yellow-600 fill-current stroke-current;
 }
 
 .nav-bar-logo-link:hover > svg:nth-of-type(2) {
@@ -63,6 +75,24 @@
   animation: fat-bat 1.5s;
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
+}
+
+.foxxie {
+  animation: foxxie 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes foxxie {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
 }
 
 @keyframes fat-bat {
