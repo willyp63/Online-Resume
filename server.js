@@ -3,6 +3,8 @@ const path = require("path");
 const { createServer } = require("http");
 const compression = require("compression");
 
+const PORT = process.env.PORT || 4200;
+
 (() => {
   // create express app
   const app = express();
@@ -10,13 +12,13 @@ const compression = require("compression");
 
   app.use(express.static(path.join(__dirname, "build")));
 
-  app.get("*", function(req, res) {
+  app.get(["/", "/*"], function(req, res) {
     res.sendFile(path.join(__dirname, "build", "index.html"));
   });
 
   // launch server
   const httpServer = createServer(app);
-  httpServer.listen(process.env.PORT, () => {
-    console.log(`Server ready at http://localhost:${process.env.PORT}`);
+  httpServer.listen(PORT, () => {
+    console.log(`Server ready at http://localhost:${PORT}`);
   });
 })();
