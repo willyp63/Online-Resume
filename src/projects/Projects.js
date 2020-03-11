@@ -135,7 +135,7 @@ const Projects = () => {
               style={{ paddingBottom: 265, maxWidth: 350 }}
             >
               <img
-                src="/imgs/euler.jpeg"
+                src="/imgs/euler.jpg"
                 alt="leonhard euler"
                 className="absolute rounded-t-full"
                 style={{ bottom: -150, right: 0 }}
