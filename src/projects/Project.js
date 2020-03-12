@@ -31,9 +31,10 @@ const Project = ({
                   href={githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-text duration-200 hover:text-blue-500"
+                  className="ml-4 transition-text duration-200 text-blue-700 hover:text-blue-500"
                 >
                   <FaGithubSquare className="w-8 h-8" />
+                  Code
                 </a>
               ) : null}
               {link ? (
@@ -41,9 +42,10 @@ const Project = ({
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-4 transition-text duration-200 hover:text-blue-500"
+                  className="ml-4 transition-text duration-200 text-blue-700 hover:text-blue-500"
                 >
                   <FaLink className="w-8 h-8" />
+                  Link
                 </a>
               ) : null}
             </div>
