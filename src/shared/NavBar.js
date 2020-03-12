@@ -155,7 +155,7 @@ const NavBar = ({ isDark = false }) => {
           <div className="lg:hidden">
             <button className="nav-bar-link" onClick={toggleMobileNav}>
               <FaSlash
-                className="w-6 h-6 md:w-8 md:h-8 transition-transform duration-400"
+                className="w-6 h-6 md:w-8 md:h-8 transition-transform duration-200 ease-linear"
                 style={
                   isMobileNavOpen
                     ? { transform: "rotate(8deg)" }
@@ -163,7 +163,7 @@ const NavBar = ({ isDark = false }) => {
                 }
               />
               <FaSlash
-                className="absolute w-6 h-6 md:w-8 md:h-8 transition-transform duration-200"
+                className="absolute w-6 h-6 md:w-8 md:h-8 transition-transform duration-200 ease-linear"
                 style={
                   isMobileNavOpen
                     ? { transform: "rotate(8deg)" }
@@ -171,7 +171,7 @@ const NavBar = ({ isDark = false }) => {
                 }
               />
               <FaSlash
-                className="absolute w-6 h-6 md:w-8 md:h-8 transition-transform duration-200"
+                className="absolute w-6 h-6 md:w-8 md:h-8 transition-transform duration-200 ease-linear"
                 style={
                   isMobileNavOpen
                     ? { transform: "rotate(98deg)" }
