@@ -43,7 +43,7 @@ const Contact = () => {
   return (
     <React.Fragment>
       <NavBar />
-      <div id="content">
+      <main id="content">
         <Splash
           titleLines={["Something On", "Your Mind?"]}
           imgUrl="/imgs/contact-me-bg.jpg"
@@ -150,7 +150,7 @@ const Contact = () => {
           </form>
         </div>
         <Footer />
-      </div>
+      </main>
     </React.Fragment>
   );
 };

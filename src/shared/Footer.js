@@ -3,7 +3,6 @@ import {
   FaGithub,
   FaLinkedinIn,
   FaEnvelope,
-  FaYoutube,
   FaInstagram
 } from "react-icons/fa";
 
@@ -11,7 +10,7 @@ const Footer = () => {
   const [hoverItem, setHoverItem] = useState(null);
 
   return (
-    <div className="flex flex-col items-center bg-gray-900 py-32 outer-grid text-center">
+    <footer className="flex flex-col items-center bg-gray-900 py-32 outer-grid text-center">
       <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white">
         Let me build the software you need.
       </h2>
@@ -89,7 +88,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-    </div>
+    </footer>
   );
 };
 

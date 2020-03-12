@@ -24,7 +24,7 @@ const Resume = () => {
   return (
     <React.Fragment>
       <NavBar isDark />
-      <div id="content">
+      <main id="content">
         <Splash
           titleLines={["My History", "& Credentials"]}
           imgUrl="/imgs/resume-bg.jpg"
@@ -67,7 +67,7 @@ const Resume = () => {
           />
         </div>
         <Footer />
-      </div>
+      </main>
     </React.Fragment>
   );
 };

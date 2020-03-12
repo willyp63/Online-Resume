@@ -47,7 +47,7 @@ const NavBar = ({ isDark = false }) => {
   };
 
   return (
-    <React.Fragment>
+    <header>
       <nav className="fixed z-50 py-2 w-full flex justify-between items-center outer-grid nav">
         {!isDark ? (
           <div
@@ -214,7 +214,7 @@ const NavBar = ({ isDark = false }) => {
           </NavHashLink>
         </div>
       </nav>
-    </React.Fragment>
+    </header>
   );
 };
 

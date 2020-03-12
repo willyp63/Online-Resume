@@ -5,7 +5,7 @@ const About = () => {
   return (
     <React.Fragment>
       <NavBar />
-      <div id="content">
+      <main id="content">
         <Splash
           titleLines={["My Passions", "& Personality"]}
           imgUrl="/imgs/me-bg.jpg"
@@ -149,7 +149,7 @@ const About = () => {
           {/* --- Hobbies --- */}
         </div>
         <Footer />
-      </div>
+      </main>
     </React.Fragment>
   );
 };

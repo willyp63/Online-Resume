@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <React.Fragment>
       <NavBar />
-      <div id="content">
+      <main id="content">
         <Splash
           titleLines={["What I've Been", "Working On"]}
           imgUrl="/imgs/projects-bg.jpg"
@@ -186,7 +186,7 @@ const Projects = () => {
           </Project>
         </div>
         <Footer />
-      </div>
+      </main>
     </React.Fragment>
   );
 };
