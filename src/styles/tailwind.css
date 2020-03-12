@@ -11592,8 +11592,11 @@ video {
   transition-duration: 1000ms;
 }
 
+html {
+  scroll-padding-top: 96px;
+}
+
 body {
-  scroll-padding-top: 116px;
   overflow-x: hidden;
 }
 
@@ -11667,6 +11670,10 @@ body.no-scroll {
 /** md: */
 
 @media (min-width: 768px) {
+  html {
+    scroll-padding-top: 128px;
+  }
+
   .outer-grid {
     padding-left: 4rem;
     padding-right: 4rem;
