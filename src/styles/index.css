@@ -18,12 +18,12 @@ body.no-scroll {
 }
 
 .mobile-nav-active .nav, .mobile-nav-active #content {
-  transform: translate(-250px, 0);
+  transform: translate(-240px, 0);
 }
 
 .mobile-nav {
-  width: 250px;
-  transform: translate(250px, 0);
+  width: 240px;
+  transform: translate(240px, 0);
 }
 
 .mobile-nav-active .mobile-nav {
@@ -62,6 +62,10 @@ body.no-scroll {
 
   .btn {
     @apply px-12 py-4 text-lg;
+  }
+
+  .input-label {
+    @apply text-xl;
   }
 }
 

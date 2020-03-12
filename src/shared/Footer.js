@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <div className="flex flex-col items-center bg-gray-900 py-32 outer-grid text-center">
-      <h2 className="font-serif text-5xl text-white">
+      <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white">
         Let me build the software you need.
       </h2>
       <p className="text-white opacity-25 mt-8">

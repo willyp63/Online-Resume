@@ -50,10 +50,10 @@ const Contact = () => {
           imgAlt="pen and paper"
         />
         <div className="outer-grid py-32 flex flex-col items-center">
-          <h2 className="w-full lg:w-2/3 text-5xl text-center mb-4">
+          <h2 className="w-full lg:w-2/3 text-4xl md:text-5xl text-center mb-4">
             Feel free to contact me about anything
           </h2>
-          <p className="w-full lg:w-2/3 text-xl text-center text-gray-700">
+          <p className="w-full lg:w-2/3 text-lg md:text-xl text-center text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -68,7 +68,7 @@ const Contact = () => {
             <div className="mx-2 italic text-gray-700">OR</div>
             <div className="border-b-2 w-6 border-gray-700"></div>
           </div>
-          <div className="text-2xl">Fill out the form below</div>
+          <div className="text-xl md:text-2xl">Fill out the form below</div>
         </div>
         <div
           className="outer-grid py-16 bg-light-gray flex flex-col items-center"

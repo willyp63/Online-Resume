@@ -15,8 +15,8 @@ const About = () => {
           {/* --- Fun Facts --- */}
           <div className="outer-grid flex items-center flex-col-reverse lg:flex-row py-16">
             <div className="pt-8 lg:w-1/2 lg:pt-0 lg:pr-16">
-              <h2 className="text-5xl pb-4">Some fun facts about myself</h2>
-              <p className="text-xl">
+              <h2 className="text-4xl md:text-5xl pb-4">Some fun facts about myself</h2>
+              <p className="text-lg md:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -100,8 +100,8 @@ const About = () => {
               </div>
             </div>
             <div className="pt-8 lg:w-1/2 lg:pt-0 lg:pl-16">
-              <h2 className="text-5xl pb-4">Cats Are Life</h2>
-              <p className="text-xl">
+              <h2 className="text-4xl md:text-5xl pb-4">Cats Are Life</h2>
+              <p className="text-lg md:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -116,8 +116,8 @@ const About = () => {
           {/* --- Hobbies --- */}
           <div className="outer-grid flex items-center flex-col-reverse lg:flex-row py-16">
             <div className="pt-8 lg:w-1/2 lg:pt-0 lg:pr-16">
-              <h2 className="text-5xl pb-4">What I do in my free time</h2>
-              <p className="text-xl">
+              <h2 className="text-4xl md:text-5xl pb-4">What I do in my free time</h2>
+              <p className="text-lg md:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris

@@ -62,11 +62,10 @@ const NavBar = ({ isDark = false }) => {
         >
           <HashLink to="/projects#splash" className="nav-bar-logo-link">
             <svg
-              className="absolute top-0 left-0"
+              className="absolute top-0 left-0 w-20 h-20 md:w-28 md:h-28"
+              viewBox="0 0 100 100"
               version="1.1"
               baseProfile="full"
-              width="100"
-              height="100"
               xmlns="http://www.w3.org/2000/svg"
             >
               <line
@@ -77,10 +76,11 @@ const NavBar = ({ isDark = false }) => {
                 style={{ strokeWidth: 2 }}
               />
               <text
-                x="43"
+                x="44"
                 y="47"
                 style={{
                   fontSize: 16,
+                  fontWeight: 300,
                   fontFamily: "sans-serif",
                   textAnchor: "middle"
                 }}
@@ -92,6 +92,7 @@ const NavBar = ({ isDark = false }) => {
                 y="62"
                 style={{
                   fontSize: 16,
+                  fontWeight: 300,
                   fontFamily: "sans-serif",
                   textAnchor: "middle"
                 }}
@@ -102,8 +103,8 @@ const NavBar = ({ isDark = false }) => {
             <svg
               version="1.1"
               baseProfile="full"
-              width="100"
-              height="100"
+              className="w-20 h-20 md:w-28 md:h-28"
+              viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
@@ -154,15 +155,15 @@ const NavBar = ({ isDark = false }) => {
           <div className="lg:hidden">
             <button className="nav-bar-link" onClick={toggleMobileNav}>
               <FaSlash
-                className="w-8 h-8 transition-transform duration-400"
+                className="w-6 h-6 md:w-8 md:h-8 transition-transform duration-400"
                 style={
                   isMobileNavOpen
                     ? { transform: "rotate(8deg)" }
-                    : { transform: "translate(0, -12px) rotate(-38deg)" }
+                    : { transform: "translate(0, -10px) rotate(-38deg)" }
                 }
               />
               <FaSlash
-                className="absolute w-8 h-8 transition-transform duration-200"
+                className="absolute w-6 h-6 md:w-8 md:h-8 transition-transform duration-200"
                 style={
                   isMobileNavOpen
                     ? { transform: "rotate(8deg)" }
@@ -170,11 +171,11 @@ const NavBar = ({ isDark = false }) => {
                 }
               />
               <FaSlash
-                className="absolute w-8 h-8 transition-transform duration-200"
+                className="absolute w-6 h-6 md:w-8 md:h-8 transition-transform duration-200"
                 style={
                   isMobileNavOpen
                     ? { transform: "rotate(98deg)" }
-                    : { transform: "translate(0, 12px) rotate(-38deg)" }
+                    : { transform: "translate(0, 10px) rotate(-38deg)" }
                 }
               />
             </button>

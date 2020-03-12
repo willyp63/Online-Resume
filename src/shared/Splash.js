@@ -13,7 +13,7 @@ const Splash = ({ titleLines, imgUrl, imgAlt, children }) => {
       />
       <div className="relative">
         <h1
-          className="font-serif text-white leading-tight mb-8 md:mb-12 text-6xl md:text-7xl lg:text-8xl"
+          className="font-serif text-white leading-tight mb-8 md:mb-12 text-5xl sm:text-6xl md:text-7xl lg:text-8xl"
           dangerouslySetInnerHTML={{ __html: titleLines.join("<br/>") }}
         ></h1>
         {children}

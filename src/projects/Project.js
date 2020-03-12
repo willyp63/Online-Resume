@@ -20,7 +20,7 @@ const Project = ({
         <div className="lg:flex-2 lg:pr-16">
           <div className="flex justify-between items-start">
             <div>
-              <h3 className="text-6xl leading-none text-gray-900">{name}</h3>
+              <h3 className="text-5xl lg:text-6xl leading-tight text-gray-900">{name}</h3>
               <em className="mb-6 mt-1 block text-lg text-gray-600">
                 {techs.join(", ")}
               </em>
