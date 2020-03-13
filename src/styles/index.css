@@ -57,6 +57,14 @@ body.no-scroll {
   @apply bg-yellow-600;
 }
 
+.link {
+  @apply text-blue-700;
+}
+
+.link:hover {
+  @apply text-blue-600;
+}
+
 /** md: */
 @media (min-width: 768px) {
   html {

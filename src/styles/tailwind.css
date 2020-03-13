@@ -11667,6 +11667,14 @@ body.no-scroll {
   background-color: #d69e2e;
 }
 
+.link {
+  color: #2b6cb0;
+}
+
+.link:hover {
+  color: #3182ce;
+}
+
 /** md: */
 
 @media (min-width: 768px) {

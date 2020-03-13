@@ -20,7 +20,9 @@ const Project = ({
         <div className="lg:flex-2 lg:pr-16">
           <div className="flex justify-between items-start">
             <div>
-              <h3 className="text-5xl lg:text-6xl leading-tight text-gray-900">{name}</h3>
+              <h3 className="text-5xl lg:text-6xl leading-tight text-gray-900">
+                {name}
+              </h3>
               <em className="mb-6 mt-1 block text-lg text-gray-600">
                 {techs.join(", ")}
               </em>
@@ -50,9 +52,14 @@ const Project = ({
               ) : null}
             </div>
           </div>
-          <p className="text-lg text-gray-900">{description}</p>
+          <p
+            className="text-lg text-gray-900"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
         </div>
-        <div className="w-full flex flex-col items-center lg:flex-1">{children}</div>
+        <div className="w-full flex flex-col items-center lg:flex-1">
+          {children}
+        </div>
       </div>
     </div>
   );
