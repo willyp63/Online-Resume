@@ -77,20 +77,16 @@ const DESCRIPTIONS = {
     <br/><br/>
     I also made the logo you see to the right/below.
   `,
-  EULER: `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    <br/><br/>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  `,
-  CODE_WARS: `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    <br/><br/>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  `,
   FAT_BAT: `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Fat Bat was one of the first games I ever made and the first app I had published.
+    My goal was to put my prgramming skills to the test and build something I could show off to my friends and family.
+    I knew an arcade game would be something I would be proud to share and wouldn't lead me down too much of a rabbit hole with features.
     <br/><br/>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    So I set off creating a really simple physics engine that would calculate a balls current position while it bounced between a floor and ceiling.
+    From there I added the mechanic where you could slow or speed up how fast the ball fell. This gave the player full control over the ball, but in a weird, less-intuitive sort of way.
+    Next I had to create obstacles for the player to avoid and this is where I think I landed on a bat flying throuhg a cave avoiding stalagmite.
+    After polishing things up and creating a set of 10 levels, I forked over the 100 bucks Apple requires and submitted my first app to the store!
+    I was so proud to show my friends and family and some of them even got slightly hooked on the game and spent way too much time trying to beat each level.
   `
 };
 
@@ -106,7 +102,7 @@ const Projects = () => {
         />
         <div>
           <Project
-            name="Chat App"
+            name="Next2Me"
             techs={[
               "AWS",
               "MongoDB",
@@ -117,6 +113,7 @@ const Projects = () => {
               "React Native"
             ]}
             description={DESCRIPTIONS.CHAT_APP}
+            link="http://www.next2me.org"
           >
             <div
               className="relative mt-16 w-full h-full flex flex-col items-center"
@@ -210,43 +207,6 @@ const Projects = () => {
                 alt="mimos app"
                 className="absolute right-0 foxxie"
                 style={{ bottom: -50 }}
-              />
-            </div>
-          </Project>
-          <Project
-            name="Project Euler"
-            isDark
-            techs={["Ruby"]}
-            description={DESCRIPTIONS.EULER}
-            link="https://projecteuler.net/"
-            githubLink="https://github.com/willyp63/Project-Euler"
-          >
-            <div
-              className="relative mt-16 w-full h-full flex flex-col items-center"
-              style={{ paddingBottom: 265, maxWidth: 350 }}
-            >
-              <img
-                src="/imgs/euler.jpg"
-                alt="leonhard euler"
-                className="absolute rounded-t-full"
-                style={{ bottom: -150, right: 0 }}
-              />
-            </div>
-          </Project>
-          <Project
-            name="Code Wars"
-            techs={["Javascript"]}
-            description={DESCRIPTIONS.CODE_WARS}
-            link="https://www.codewars.com/users/willyp63"
-          >
-            <div
-              className="mt-16 w-full h-full flex flex-col items-center"
-              style={{ maxWidth: 350 }}
-            >
-              <img
-                src="/imgs/code-wars.png"
-                alt="code wars"
-                className="rounded-t-full w-full"
               />
             </div>
           </Project>

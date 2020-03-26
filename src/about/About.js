@@ -27,15 +27,19 @@ const About = () => {
               </p>
             </div>
             <div className="w-full lg:w-1/2">
-              <div className="relative pb-1/1 overflow-hidden">
+              <div className="relative pb-1/1 overflow-hidden" style={{ marginTop: -50, marginBottom: -50 }}>
                 <img
                   src="/imgs/kickball-team.jpg"
                   alt="cats"
-                  style={{
-                    clipPath:
-                      "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)"
-                  }}
-                  className="absolute w-full h-full object-cover"
+                  className="absolute w-full h-full object-cover rounded-full"
+                />
+                <div
+                  className="absolute w-full bg-white"
+                  style={{ height: 50 }}
+                />
+                <div
+                  className="absolute w-full bottom-0 bg-white"
+                  style={{ height: 50 }}
                 />
               </div>
             </div>
@@ -51,10 +55,6 @@ const About = () => {
                       src="/imgs/cats-0.jpg"
                       alt="cats"
                       className="absolute w-full h-full object-cover"
-                      style={{
-                        clipPath:
-                          "polygon(0% 33.33%, 33.33% 0%, 100% 0%, 100% 100%, 0% 100%)"
-                      }}
                     />
                   </div>
                 </div>
@@ -64,10 +64,6 @@ const About = () => {
                       src="/imgs/cats-1.jpg"
                       alt="cats"
                       className="absolute w-full h-full object-cover"
-                      style={{
-                        clipPath:
-                          "polygon(66.66% 0%, 100% 33.33%, 100% 100%, 0% 100%, 0% 0%)"
-                      }}
                     />
                   </div>
                 </div>
@@ -77,10 +73,6 @@ const About = () => {
                       src="/imgs/cats-2.jpg"
                       alt="cats"
                       className="absolute w-full h-full object-cover"
-                      style={{
-                        clipPath:
-                          "polygon(33.33% 100%, 0% 66.66%, 0% 0%, 100% 0%, 100% 100%)"
-                      }}
                     />
                   </div>
                 </div>
@@ -90,10 +82,6 @@ const About = () => {
                       src="/imgs/cats-3.jpg"
                       alt="cats"
                       className="absolute w-full h-full object-cover"
-                      style={{
-                        clipPath:
-                          "polygon(100% 66.66%, 66.66% 100%, 0% 100%, 0% 0%, 100% 0%)"
-                      }}
                     />
                   </div>
                 </div>
@@ -128,7 +116,7 @@ const About = () => {
               </p>
             </div>
             <div className="w-full lg:w-1/2">
-              <div className="relative pb-1/1 overflow-hidden">
+              <div className="relative pb-1/1 overflow-hidden" style={{ marginTop: -50, marginBottom: -50 }}>
                 <img
                   src="/imgs/skiing.jpg"
                   alt="cats"

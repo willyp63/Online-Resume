@@ -54,10 +54,10 @@ const Contact = () => {
             Feel free to contact me about anything
           </h2>
           <p className="w-full lg:w-2/3 text-lg md:text-xl text-center text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo.
+            Have an idea for an app? Want to know more about a project I worked on?
+            Think the moon is an artificial satellite planted here by
+            aliens in order to use as a base while they conduct genetic experiments on us?
+            Don't be afraid to reach out!
           </p>
           <a className="btn mt-16" href="mailto:wpirino1@gmail.com">
             <FaEnvelope className="mr-2" />
