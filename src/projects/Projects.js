@@ -5,15 +5,15 @@ import { Splash, NavBar, Footer } from "../shared";
 
 const DESCRIPTIONS = {
   CHAT_APP: `
-    Chat App is a startup idea I've been working on with a couple friends. I recently quit my job, which gave my the opportunity
+    Next2Me is a startup idea I've been working on with a couple friends. I recently quit my job, which gave my the opportunity
     to jump in head first and take the lead on the tech side.
     <br/><br/>
     We have two server projects, a GraphQL Rest API and a WebSocket messaging API .
-    Both share an NPM package that allows them to easily connect to the same MongoDB database.
+    Both share a custom NPM package that allows them to connect to the same MongoDB database.
     We initially wanted to host on Heroku because of simplicity, but soon realized even their professional plans were tapping out at just a few hundred simultaneous WebSocket connnections.
     That lead us to AWS, where I took on the task of deploying everything to EC2 instances.
-    Once successfully deploy (a week and countless pots of coffee later), we were able to make improvements such as: disabling Node garbage collection and running it at our determined intervals and
-    selecting hardware specialized for network connections for out WebSocket server. After that, we were able to hit 2000 simultaneous connections pretty comfortably while paying the same price we were on Heroku
+    Once successfully deployed, we were able to make improvements such as: disabling Node garbage collection and running it at our determined intervals and
+    selecting hardware specialized for network connections for our messaging server. After that, we were able to hit 2000+ simultaneous connections pretty comfortably while paying the same price we were on Heroku
     (check out this <a class="link" href=\"https://blog.jayway.com/2015/04/13/600k-concurrent-websocket-connections-on-aws-using-node-js/\">article</a> to see most of what we did).
     <br/><br/>
     The app itself is written in React Native and will soon be released to both the iOS and Android stores (we’re in the review process with both currently).
@@ -47,7 +47,7 @@ const DESCRIPTIONS = {
     For one, it would take an insane amount of time to make any significant amount of money since you only net $1 every few rolls. You might be
     thinking well I'll just bet $10 or $100 to start instead of $1. The problem with that is that you risk a lot of money with this method.
     Say you start at $100 and black doesnt hit for 6 rounds in a row (about a 1.1% chance). At that point, you'll be in debt to the casino
-    a whooping $12,700 and say you don't have enough to make the next bet of $12,800. Then, you're forced to walk away down $12,700. Not a good day.
+    a whooping $12,700 and say you don't have enough to make the next bet of $12,800. Then, you're forced to walk away down $12,700.
     <br/><br/>
     So inorder to satisfy my curiosity and prevent my dad from gamballing away my inheritance, I created a calculator that makes it easy to see
     what you can expect to get out of a roulette strategy like the one I descibed above. You simply specify your strategy using some really simple
@@ -60,7 +60,7 @@ const DESCRIPTIONS = {
     and one of my first attempts at a startup.
     <br/><br/>
     This was the first mobile app I made targeting both iOS and Andriod. I had heard of popular options like React Native and Ionic, but
-    decided to go with the more experimental <a class="link" href=\"https://flutter.dev/\">Flutter</a> because I had a the experience with Dart form
+    decided to go with the more experimental <a class="link" href=\"https://flutter.dev/\">Flutter</a> because I had a the experience with Dart from
     working at Google and I also liked that it came with its own design system.
     <br/><br/>
     We also had a admin application written in Angular that would allow servers to create/manage orders and generate QR codes that
@@ -72,8 +72,7 @@ const DESCRIPTIONS = {
     it is a project management software that we hope to use to build software more effiecently.
     <br/><br/>
     The site is built with Angular and Tailwind.css. On the backend we have Node, Express, and MongoDB. Did not have to tackle any interesting
-    challenges here, but it was good practice building a production ready site with consideration for design and code-quality all in less than
-    a week.
+    challenges here, but it was good practice building a production ready site with consideration for design and code-quality all in just a few weeks.
     <br/><br/>
     I also made the logo you see to the right/below.
   `,

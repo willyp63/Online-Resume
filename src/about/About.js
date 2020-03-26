@@ -15,19 +15,22 @@ const About = () => {
           {/* --- Fun Facts --- */}
           <div className="outer-grid flex items-center flex-col-reverse lg:flex-row py-16">
             <div className="pt-8 lg:w-1/2 lg:pt-0 lg:pr-16">
-              <h2 className="text-4xl md:text-5xl pb-4">Some fun facts about myself</h2>
+              <h2 className="text-4xl md:text-5xl pb-4">
+                Some fun facts about myself
+              </h2>
               <p className="text-lg md:text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I went to Australia once where I developed a fear of peacocks.
+                My mom owns a pizza restaruant that I used to work at as a
+                teenager (no I can't do the dough tossing thing). Soccer is the
+                only sport I will watch on TV. I would love to be a vegan one
+                day, but bacon is just too good.
               </p>
             </div>
             <div className="w-full lg:w-1/2">
-              <div className="relative pb-1/1 overflow-hidden" style={{ marginTop: -50, marginBottom: -50 }}>
+              <div
+                className="relative pb-1/1 overflow-hidden"
+                style={{ marginTop: -50, marginBottom: -50 }}
+              >
                 <img
                   src="/imgs/kickball-team.jpg"
                   alt="cats"
@@ -90,13 +93,20 @@ const About = () => {
             <div className="pt-8 lg:w-1/2 lg:pt-0 lg:pl-16">
               <h2 className="text-4xl md:text-5xl pb-4">Cats Are Life</h2>
               <p className="text-lg md:text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I'm the proud father of 2 adorable kitties, Mr. Kitty & Oni. I
+                adopted Mr. Kitty from a shelter about a year and a half ago,
+                and he has been my best friend ever since (he's the chunky one).
+                Oni came along about 6 months ago when a coworker found her
+                wandering the neighborhood. Oni is the sweetest cat I've ever
+                met and I'm working currently working on training her to go on
+                hikes. If you want to see more of Mr. Kitty and Oni checkout{" "}
+                <a
+                  class="link"
+                  href="https://www.instagram.com/mr_kitty_and_oni/"
+                >
+                  mr_kitty_and_oni
+                </a>{" "}
+                on instagram .
               </p>
             </div>
           </div>
@@ -104,19 +114,25 @@ const About = () => {
           {/* --- Hobbies --- */}
           <div className="outer-grid flex items-center flex-col-reverse lg:flex-row py-16">
             <div className="pt-8 lg:w-1/2 lg:pt-0 lg:pr-16">
-              <h2 className="text-4xl md:text-5xl pb-4">What I do in my free time</h2>
+              <h2 className="text-4xl md:text-5xl pb-4">
+                What I do in my free time
+              </h2>
               <p className="text-lg md:text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I'm a bit of a blizzard fan boy. I devoted many of my childhood
+                years to playing World of Warcraft, and now a days I spend a
+                lot of my time playing Hearthstone and Heroes of the Storm
+                (blizzard's take on a MOBA). I am almost always praticipating in
+                some sort of adult sports league whether it be volleyball,
+                soccer, or kickball. I try to do yoga at least a few times a
+                week and I look forward to ever winter when I can hit the slopes
+                again ⛷️.
               </p>
             </div>
             <div className="w-full lg:w-1/2">
-              <div className="relative pb-1/1 overflow-hidden" style={{ marginTop: -50, marginBottom: -50 }}>
+              <div
+                className="relative pb-1/1 overflow-hidden"
+                style={{ marginTop: -50, marginBottom: -50 }}
+              >
                 <img
                   src="/imgs/skiing.jpg"
                   alt="cats"

@@ -16,11 +16,11 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
         <Route path="/projects">
           <Projects />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/resume">
           <Resume />
@@ -29,7 +29,7 @@ const App = () => {
           <Contact />
         </Route>
         <Route path="/">
-          <Redirect to="/about" />
+          <Redirect to="/projects" />
         </Route>
       </Switch>
     </Router>

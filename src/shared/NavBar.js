@@ -119,18 +119,18 @@ const NavBar = ({ isDark = false }) => {
           </HashLink>
           <div className="hidden lg:block">
             <NavHashLink
-              to="/about#splash"
-              activeClassName="nav-bar-link--active"
-              className="nav-bar-link"
-            >
-              ABOUT
-            </NavHashLink>
-            <NavHashLink
               to="/projects#splash"
               activeClassName="nav-bar-link--active"
               className="nav-bar-link"
             >
               PROJECTS
+            </NavHashLink>
+            <NavHashLink
+              to="/about#splash"
+              activeClassName="nav-bar-link--active"
+              className="nav-bar-link"
+            >
+              ABOUT
             </NavHashLink>
             <NavHashLink
               to="/resume#splash"
@@ -185,18 +185,18 @@ const NavBar = ({ isDark = false }) => {
       <nav className="fixed z-50 top-0 right-0 h-screen mobile-nav bg-gray-800">
         <div className="flex flex-col py-8 px-4">
           <NavHashLink
-            to="/about#splash"
-            activeClassName="nav-bar-link--active"
-            className="nav-bar-link mb-2"
-          >
-            ABOUT
-          </NavHashLink>
-          <NavHashLink
             to="/projects#splash"
             activeClassName="nav-bar-link--active"
             className="nav-bar-link mb-2"
           >
             PROJECTS
+          </NavHashLink>
+          <NavHashLink
+            to="/about#splash"
+            activeClassName="nav-bar-link--active"
+            className="nav-bar-link mb-2"
+          >
+            ABOUT
           </NavHashLink>
           <NavHashLink
             to="/resume#splash"
