@@ -27,22 +27,11 @@ const About = () => {
               </p>
             </div>
             <div className="w-full lg:w-1/2">
-              <div
-                className="relative pb-1/1 overflow-hidden"
-                style={{ marginTop: -50, marginBottom: -50 }}
-              >
+              <div className="relative pb-1/1 overflow-hidden">
                 <img
                   src="/imgs/kickball-team.jpg"
                   alt="cats"
-                  className="absolute w-full h-full object-cover rounded-full"
-                />
-                <div
-                  className="absolute w-full bg-white"
-                  style={{ height: 50 }}
-                />
-                <div
-                  className="absolute w-full bottom-0 bg-white"
-                  style={{ height: 50 }}
+                  className="absolute w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -119,8 +108,8 @@ const About = () => {
               </h2>
               <p className="text-lg md:text-xl">
                 I'm a bit of a blizzard fan boy. I devoted many of my childhood
-                years to playing World of Warcraft, and now a days I spend a
-                lot of my time playing Hearthstone and Heroes of the Storm
+                years to playing World of Warcraft, and now a days I spend a lot
+                of my time playing Hearthstone and Heroes of the Storm
                 (blizzard's take on a MOBA). I am almost always praticipating in
                 some sort of adult sports league whether it be volleyball,
                 soccer, or kickball. I try to do yoga at least a few times a
@@ -129,23 +118,11 @@ const About = () => {
               </p>
             </div>
             <div className="w-full lg:w-1/2">
-              <div
-                className="relative pb-1/1 overflow-hidden"
-                style={{ marginTop: -50, marginBottom: -50 }}
-              >
+              <div className="relative pb-1/1 overflow-hidden">
                 <img
                   src="/imgs/skiing.jpg"
                   alt="cats"
-                  style={{ clipPath: "circle(50% at center)" }}
                   className="absolute w-full h-full object-cover"
-                />
-                <div
-                  className="absolute w-full bg-white"
-                  style={{ height: 50 }}
-                />
-                <div
-                  className="absolute w-full bottom-0 bg-white"
-                  style={{ height: 50 }}
                 />
               </div>
             </div>
