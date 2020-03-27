@@ -60,7 +60,7 @@ const NavBar = ({ isDark = false }) => {
           className="flex items-center relative"
           style={{ mixBlendMode: "difference" }}
         >
-          <HashLink to="/about#splash" className="nav-bar-logo-link">
+          <HashLink to="/projects#splash" className="nav-bar-logo-link">
             <svg
               className="absolute top-0 left-0 w-20 h-20 md:w-28 md:h-28"
               viewBox="0 0 100 100"
