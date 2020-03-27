@@ -16,7 +16,7 @@ const DESCRIPTIONS = {
     selecting hardware specialized for network connections for our messaging server. After that, we were able to hit 2000+ simultaneous connections pretty comfortably while paying the same price we were on Heroku
     (check out this <a class="link" href=\"https://blog.jayway.com/2015/04/13/600k-concurrent-websocket-connections-on-aws-using-node-js/\">article</a> to see most of what we did).
     <br/><br/>
-    The app itself is written in React Native and will soon be released to both the iOS and Android stores (we’re in the review process with both currently).
+    The app itself is written in React Native and is released on both the Android and iOS stores.
     We've taken on the approach of using <a class="link" href=\"https://reactjs.org/docs/hooks-intro.html\">Hooks</a> and all functional components.
     This was an uneasy transition for those of us that had used React before, but we all soon came to love the elegance of this method.
     Another interesting approach we took was to create our own <a class="link" href="https://tailwindcss.com/">Tailwind.css</a> package for React Native.

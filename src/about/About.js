@@ -20,7 +20,7 @@ const About = () => {
               </h2>
               <p className="text-lg md:text-xl">
                 I went to Australia once where I developed a fear of peacocks.
-                My mom owns a pizza restaruant that I used to work at as a
+                My mom owns a pizza restaurant that I used to work at as a
                 teenager (no I can't do the dough tossing thing). Soccer is the
                 only sport I will watch on TV. I would love to be a vegan one
                 day, but bacon is just too good.
@@ -87,7 +87,7 @@ const About = () => {
                 and he has been my best friend ever since (he's the chunky one).
                 Oni came along about 6 months ago when a coworker found her
                 wandering the neighborhood. Oni is the sweetest cat I've ever
-                met and I'm working currently working on training her to go on
+                met and I'm currently working on training her to go on
                 hikes. If you want to see more of Mr. Kitty and Oni checkout{" "}
                 <a
                   class="link"
@@ -95,7 +95,7 @@ const About = () => {
                 >
                   mr_kitty_and_oni
                 </a>{" "}
-                on instagram .
+                on instagram.
               </p>
             </div>
           </div>
@@ -110,7 +110,7 @@ const About = () => {
                 I'm a bit of a blizzard fan boy. I devoted many of my childhood
                 years to playing World of Warcraft, and now a days I spend a lot
                 of my time playing Hearthstone and Heroes of the Storm
-                (blizzard's take on a MOBA). I am almost always praticipating in
+                (blizzard's take on a MOBA). I am almost always participating in
                 some sort of adult sports league whether it be volleyball,
                 soccer, or kickball. I try to do yoga at least a few times a
                 week and I look forward to ever winter when I can hit the slopes
